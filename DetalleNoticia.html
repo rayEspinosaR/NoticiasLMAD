@@ -1,0 +1,156 @@
+<html lang="es">
+	<head>
+		<title>Noticia LMAD</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" media="all" href="css/IndexPlantilla.css">
+		<link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+		<link rel="stylesheet" type="text/css" media="all" href="css/NoticiaDetallada.css">
+		<link rel="stylesheet" type="text/css" media="all" href="css/FormularioEstilo.css">
+		<link rel="stylesheet" type="text/css" media="all" href="css/Coments.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/buttons.css"> 
+
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="js/buttons.js"></script>
+		<script src="js/jquery.js"></script>
+
+		<script >
+			$(document).ready(function()
+			{
+				$('#nav li').hover(function()
+				{
+					$(this).find('#subnav').fadeIn(400);
+
+				},function()
+				{
+					$(this).find('#subnav').fadeOut(100);
+				});
+			});
+		</script>
+
+	</head>
+	<body>
+		<div class="logo">
+			<div class="Login">				
+					<form id="form" name="form" method="POST">						
+						<label class="loginText">Email</label>
+						<input type="text" name="email" id="name" class="loginInput" placeholder="Email" />
+						<label class="loginText">Password</label>
+						<input type="password" name="pass" id="pass" class="loginInput" placeholder="Password" />				
+						<div class="botones">
+							<button type="submit" class="Boton" >Sign In</button>
+							<button type="submit" class="BotonRegis" >Registrate!</button>
+						</div>
+					</form>			
+			</div>
+		</div><!-- Logo Encabezado -->
+		<br>
+		<div class="container">
+			<div>
+			    <ul id="nav">
+			        <li class="currentDos"><a href="#">Inicio</a></li>
+			        <li><a href="#">Local</a>
+			            <ul id="subnav">
+			                <li><a href="#">Elemento 1</a></li>
+			                <li><a href="#">Elemento 2</a></li>
+			                <li><a href="#">Elemento 3</a></li>		                
+			            </ul>
+			        </li>
+	        		<li><a href="#">Internacional</a>
+	        			<ul id="subnav">
+			                <li><a href="#">Elemento 1</a></li>
+			                <li><a href="#">Elemento 2</a></li>
+			                <li><a href="#">Elemento 3</a></li>		                
+			            </ul>
+	        		</li>
+	        		<li><a href="#">Contactanos</a></li>
+	        		<li><input type="text" name="busqueda" id="search" placeholder="Buscar" /></li>
+	    		</ul>	    		
+			</div>
+			<div class="NoticiaDetalle">
+			    <h5 id="tituloNoticiaDetallada">Titulo de la Noticia Principal Detallada</h5>
+			    <!--<p id="DescNoticiaDetallada">Descripcion de la noticia ya mas detallada.</p>=-->
+			    <div class="DescripcionDetalladaNoticia">
+			    	<iframe width="420" height="345" class="videoNoticias"
+						src="http://www.youtube.com/embed/XGSy3_Czz8k">
+				  	</iframe>	
+				  	<p class="Descripcion">
+				  		Leonardo di ser Piero da Vinci (Italian pronunciation: [leoˈnardo da vˈvintʃi] About this sound pronunciation (help·info); April 15, 1452 – May 2, 1519, Old Style) was an Italian Renaissance polymath: painter, sculptor, architect, musician, mathematician, engineer, inventor, anatomist, geologist, cartographer, botanist, and writer. His genius, perhaps more than that of any other figure, epitomized the Renaissance humanist ideal. Leonardo has often been described as the archetype of the Renaissance Man, a man of "unquenchable curiosity" and "feverishly inventive imagination".[1] He is widely considered to be one of the greatest painters of all time and perhaps the most diversely talented person ever to have lived.[2] According to art historian Helen Gardner, the scope and depth of his interests were without precedent and "his mind and personality seem to us superhuman, the man himself mysterious and remote".[1] Marco Rosci states that while there is much speculation about Leonardo, his vision of the world is essentially logical rather than mysterious, and that the empirical methods he employed were unusual for his time.
+				  		Born out of wedlock to a notary, Piero da Vinci, and a peasant woman, Caterina, in Vinci in the region of Florence, Leonardo was educated in the studio of the renowned Florentine painter, Verrocchio. Much of his earlier working life was spent in the service of Ludovico il Moro in Milan. He later worked in Rome, Bologna and Venice, and he spent his last years in France at the home awarded him by Francis I.
+						Leonardo was, and is, renowned primarily as a painter. Among his works, the Mona Lisa is the most famous and most parodied portrait[4] and The Last Supper the most reproduced religious painting of all time, with their fame approached only by Michelangelo's The Creation of Adam.[1] Leonardo's drawing of the Vitruvian Man is also regarded as a cultural icon,[5] being reproduced on items as varied as the euro coin, textbooks, and T-shirts. Perhaps fifteen of his paintings survive, the small number because of his constant, and frequently disastrous, experimentation with new techniques, and his chronic procrastination.[nb 1] Nevertheless, these few works, together with his notebooks, which contain drawings, scientific diagrams, and his thoughts on the nature of painting, compose a contribution to later generations of artists rivalled only by that of his contemporary, Michelangelo.
+						Leonardo is revered for his technological ingenuity. He conceptualised a hang glider, a tank, concentrated solar power, an adding machine,[6] and the double hull, also outlining a rudimentary theory of plate tectonics. Relatively few of his designs were constructed or were even feasible during his lifetime,[nb 2] but some of his smaller inventions, such as an automated bobbin winder and a machine for testing the tensile strength of wire, entered the world of manufacturing unheralded.[nb 3] He made important discoveries in anatomy, civil engineering, optics, and hydrodynamics, but he did not publish his findings and they had no direct influence on later science.[7]
+				  	</p>
+				  	<!--AQUI IRAN LOS COMENTARIOS-->				  
+				</div>
+			</div>							
+			<div class="noticia-principal" id="ComentariosVideo">
+				<div class="ContenidoComment">
+					<div class="left">
+						<img src="images/thumb_small.jpg">
+					</div>
+					<div class="right">	
+						<span class="nameComment">Kerssel Kordero</span>
+						<p>Aqui es donde va a ir el comentario que dejaron 
+							los demas usuarios, obviamente esto es de prueba
+							para ver como se vera...</p>
+					</div>
+				</div><!--COMENTARIO, IMG Y NAME  -->	
+				<div class="clear"></div>
+				
+				<div class="message">
+					A ti y a <a href="/perfil/usuario/" title="Perfil de Jorge Perez">Jorge Perez</a> les gusta esto.
+				</div>			
+				<ul class="listComment">
+					<li>			
+						<div class="ContenidoComment">
+							<div class="left">
+								<img src="images/thumb_small.jpg">
+							</div>
+							<div class="right">	
+								<span class="nameComment">Ray Espinosa</span>
+								<p>Aqui es donde va a ir el comentario que dejaron 
+									los demas usuarios, obviamente esto es de prueba
+									para ver como se vera...</p>
+							</div>
+						</div><!--COMENTARIO, IMG Y NAME  -->	
+					</li>
+					<li>			
+						<div class="ContenidoComment">
+							<div class="left">
+								<img src="images/thumb_small.jpg">
+							</div>
+							<div class="right">	
+								<span class="nameComment">Juan Sosa</span>
+								<p>Aqui es donde va a ir el comentario que dejaron 
+									los demas usuarios, obviamente esto es de prueba
+									para ver como se vera...</p>
+							</div>
+						</div><!--COMENTARIO, IMG Y NAME  -->	
+					</li>
+				</ul><!--LISTA UL DE COMENTARIOS-->
+				
+			</div><!--LISTA DE COMENTARIOS -->
+			<div class="noticia-principal" id="ComentariosVideo" >
+				<fieldset id="formulario">
+					<form id="form" name="form">
+						<h1>Dejanos tus Comentarios</h1>
+						<label>Nombre
+							<span class="detalle">Ingrese su nombre</span>
+						</label>
+						<input type="text" name="name" id="name" />
+						<label>Email
+							<span class="detalle">Ingrese su email</span>
+						</label>
+						<input type="text" name="email" id="email" />
+						<textarea placeholder="Comentario..."></textarea>
+						<button type="submit">Enviar</button>
+					</form>
+				</fieldset>
+			</div><!--AGREGAR COMENTARIO-->
+			</div>
+		</div><!--Conainer-->
+		<div class="PiePagina"></div><!--Pie de Pagina-->
+
+
+	</body>
+</html>

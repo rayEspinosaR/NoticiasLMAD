@@ -1,0 +1,64 @@
+#formulario{
+  border:solid 2px #708090;
+  background:#dcdcdc;
+  margin:0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width:400px;
+  padding:14px;
+  border-radius: 5px;
+}
+#formulario h1 {
+  font-size:24px;
+  font-weight:bold;
+  margin-bottom:10px;
+
+}
+#formulario label{
+  display:block;
+  font-weight:bold;
+  text-align:right;
+  width:140px;
+  float:left;
+}
+#formulario .detalle{
+  color:#666666;
+  display:block;
+  font-size:11px;
+  font-weight:normal;
+  text-align:right;
+  width:140px;
+}
+#formulario input{
+  float:left;
+  font-size:12px;
+  padding:4px 2px;
+  border:solid 1px #708090;
+  width:200px;
+  margin:2px 0 20px 10px;
+}
+#formulario button{
+  clear:both;
+  margin:0 auto;
+  width:100px;
+  height:31px;
+  background:#696969;
+  text-align:center;
+  line-height:25px;
+  color:#FFFFFF;
+  font-size:15px;
+  font-weight:bold;
+  display: block;
+  margin-top: 5px;
+}
+#formulario textarea
+{
+
+    display: block;
+    width: 400px;
+    height: 120px;
+    padding: 8px;
+    border: 1px solid #c0c0c0;
+    line-height: 130%;
+    font-size: 13px;
+}

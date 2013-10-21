@@ -1,0 +1,16 @@
+.perfilUser
+{
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;  
+  padding: 5px;
+  float: left;
+  display: inline-block;
+  border: 1px solid #919191;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: #a39b9b 0px 0px 8px 0px inset;
+
+}
